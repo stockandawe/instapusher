@@ -26,7 +26,7 @@ module Instapusher
 
         if response.code == '200'
           tmp = MultiJson.load(response.body)
-          puts 'The appliction will be deployed to: ' +  tmp['heroku_url']
+          puts 'The application will be deployed to: ' +  tmp['heroku_url']
           puts 'Monitor the job status at: ' +  tmp['status']
         else
           puts 'Something has gone wrong'
